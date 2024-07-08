@@ -69,6 +69,22 @@ console.log("a ^ b : ", a ** b) // Exponentiation  i.e; a^b
 {
     let a = 5;
     let b = 6;
-    console.log("a : ",a,"b : ", b);
-    console.log("!(a<b)", !(a<b)); //false
+    console.log("a : ", a, "b : ", b);
+    console.log("!(a<b)", !(a < b)); //false
+}
+
+
+//Ternary Operators-------------------------------------------------------------------------
+// Compact If else 
+//condition ? true output : false output
+{
+    let age = 17;
+    let result = age >= 18 ? "adult" : "not adult";
+    console.log(result)
+
+}
+//or
+{
+    let age = 1070;
+    age >= 18 ? console.log("Adult") : console.log("Not Adult");
 }
