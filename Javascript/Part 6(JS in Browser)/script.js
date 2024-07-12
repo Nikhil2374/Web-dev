@@ -70,3 +70,64 @@ console.log(divelement.children);
 console.log(divelement.firstChild);
 //Last Child
 console.log(divelement.lastChild);
+
+
+//DOM part 2----------------------------------------------------------------------------------------------------------
+
+//Attributes================================
+//Get Attributes
+//eg:1
+let div = document.querySelector("div");
+console.log(div.innerText);
+
+let xid = div.getAttribute("id");
+console.log(xid);
+
+let name = div.getAttribute("name");
+console.log(name);
+//eg:2
+let para = document.querySelector("p");
+console.log(para.getAttribute("class"))
+
+//Set Attributes
+
+let para2 = document.querySelector("p");
+console.log(para2.setAttribute("class", "new Class"))
+
+//Style================================(Note : eg:1 background-color(css) --> backgroundColor(js)
+//                                             eg:2 font-size(css) --> fontSize )
+let div2 = document.querySelector("div");
+console.log(div2);
+console.log(div.style);
+
+//Changing CSS style through JS
+div.style.backgroundColor = "yellow";
+div.style.fontSize = "33px";
+
+
+
+//Insert Elements-----------------------------------------------------------------------------------------------
+//eg:1 Add button
+let btn = document.createElement("Button");
+btn.innerText = "Click Me!";
+console.log(btn);
+//adds at the end of node (inside)
+let ndiv = document.querySelector("div");
+div.append(btn);
+//adds at the start of node (inside)
+div.prepend(btn);
+//adds before the node (outside)
+div.before(btn);
+//adds after the node (outside)
+div.after(btn);
+
+//eg:2 Add Heading
+let hdng = document.createElement("h1");
+hdng.innerText = " This is heading !";
+document.querySelector("body").prepend(hdng);
+
+//Delete Elements------------------------------------------------------------------------------------------------
+let rmvh2 = document.querySelector("h2");
+rmvh2.remove();
+
+//appendChild(); & removeChild();
