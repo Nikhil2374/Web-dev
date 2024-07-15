@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            color: blue;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<!--Inline Event Handling in HTML-->
+<body>
+<button id="btn" onclick="console.log('Button clicked');alert('Hello');">click me!</button>
+<button ondblclick="console.log('Button clicked 2 times');alert('Hello 2');">click me 2 times!</button>
+<div onmouseover="console.log('You are inside div!')">
+    This is box!
+</div>
+
+<button id="btn1">btn1!</button>
+<div id="box">
+  This is Box2 !
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
